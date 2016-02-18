@@ -20,6 +20,8 @@
 
 --durations=10 # Slowest ten tests
 
+-r chars      # (f)ailed, (E)rror, (s)kipped, (x)failed, (X)passed reasons.
+
 # Running particular tests
 py.test test_mod.py   # run tests in module
 py.test somepath      # run all tests below somepath
