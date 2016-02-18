@@ -5,7 +5,7 @@
 --fixtures  # show available builtin function arguments
 -h | --help # show help on command line and config file options
 
--pdb        # Open pdb on failure
+--pdb        # Open pdb on failure
 # Note that on any failure the exception information is stored on sys.last_value, sys.last_type and sys.last_traceback.
 
 -x          # Stop after first failure
