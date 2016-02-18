@@ -1,26 +1,27 @@
 # py.test cheat-sheet
 
 ```
---version   # shows where pytest was imported from
---fixtures  # show available builtin function arguments
--h | --help # show help on command line and config file options
+--version     # shows where pytest was imported from
+--fixtures    # show available builtin function arguments
+-h | --help   # show help on command line and config file options
 
---pdb        # Open pdb on failure
+--pdb         # Open pdb on failure
 # Note that on any failure the exception information is stored on sys.last_value, sys.last_type and sys.last_traceback.
 
--x          # Stop after first failure
---maxfail=2 # Stop after 2 failures
+-x            # Stop after first failure
+--maxfail=2   # Stop after 2 failures
 
 -l | --showlocals # Show local variables
 
---tb=long    # the default informative traceback formatting
---tb=native  # the Python standard library formatting
---tb=short   # a shorter traceback format
---tb=line    # only one line per failure
+--tb=long     # the default informative traceback formatting
+--tb=native   # the Python standard library formatting
+--tb=short    # a shorter traceback format
+--tb=line     # only one line per failure
 
---durations=10 # Slowest ten tests
+--durations=10  # Slowest ten tests
 
--r chars      # (f)ailed, (E)rror, (s)kipped, (x)failed, (X)passed reasons.
+# -r<chars>: Show reasons for (f)ailed, (E)rror, (s)kipped, (x)failed, (X)passed.
+-rs
 
 # Running particular tests
 py.test test_mod.py   # run tests in module
