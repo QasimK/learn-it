@@ -9,7 +9,7 @@
 --nomigrations
 
 --pdb         # Open pdb on failure
-# (On any failure exception information is stored on sys.last_value, sys.last_type and sys.last_traceback.)
+# (Exception information is stored on sys.last_value, sys.last_type and sys.last_traceback.)
 
 -x            # Stop after first failure
 --maxfail=2   # Stop after 2 failures
