@@ -26,7 +26,7 @@
 
 --durations=10  # Slowest ten tests
 
-# -r<chars>: Show reasons for (f)ailed, (E)rror, (s)kipped, (x)failed, (X)passed
+# -r<chars>: Show reasons for (f)ailed, (E)rror, (s)kipped, (x)failed, (X)passed, (w)arnings (pytest)
 -rs
 
 # Running particular tests
