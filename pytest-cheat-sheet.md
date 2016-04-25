@@ -30,6 +30,8 @@
 -rs
 
 # Running particular tests
+--ignore=tests/       # Ignore folder or file, you can do this multiple times
+
 py.test test_mod.py   # run tests in module
 py.test somepath      # run all tests below somepath
 py.test -k stringexpr # only run tests with names that match the
