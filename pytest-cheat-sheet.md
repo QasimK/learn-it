@@ -8,8 +8,9 @@
 # With Django the setup time may be quite long (don't do this normally)
 --nomigrations
 
---pdb         # Open pdb on failure
 # (Exception information is stored on sys.last_value, sys.last_type and sys.last_traceback.)
+--pdb         # Open pdb on failure
+--capture=no  # Allow use of ipdb in code
 
 -x            # Stop after first failure
 --maxfail=2   # Stop after 2 failures
