@@ -13,7 +13,7 @@
 --capture=no  # Allow use of ipdb in code
 
 -x            # Stop after first failure
---maxfail=2   # Stop after 2 failures
+--maxfail=3   # Stop after 3 failures
 
 --lf          # Run only last failed tests (otherwise, all)
 --ff          # Run last failed tests first, then the others
@@ -46,6 +46,11 @@ py.test test_mod.py::TestClass::test_method  # run a single method in
                                              # a single class
 
 --pyargs      # Allow specifying a path via python module import format
+
+# Creating result files
+--junitxml=path
+--resultlog=path      # Plain text
+--pastebin=failed|all # Upload to a pastebin service
 ```
 
 https://pytest.org/latest/usage.html
