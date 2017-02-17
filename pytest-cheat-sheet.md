@@ -5,10 +5,10 @@
 - `-h`/`--help`  show help on command line and config file options
 
 - `--nomigrations` With Django the setup time may be quite long (don't do this 
-normally)
+  normally)
 
 - (Exception information is stored on `sys.last_value`, `sys.last_type` and 
-`sys.last_traceback`.)
+  `sys.last_traceback`.)
 
 - `--pdb`        Open pdb on failure
 - `--capture=no` Allow use of ipdb in code
@@ -29,7 +29,7 @@ normally)
 - `--durations=10` Slowest ten tests
 
 - `-r<chars>` Show reasons for (f)ailed, (E)rror, (s)kipped, (x)failed, 
-(X)passed, (w)arnings (pytest)
+  (X)passed, (w)arnings (pytest)
 - `-rs`
 
 ## Running particular tests
@@ -38,11 +38,11 @@ normally)
 
 - `py.test test_mod.py`   run tests in module
 - `py.test somepath`      run all tests below somepath
-- `py.test -k stringexpr` only run tests with names that match the "string 
-expression", e.g. "MyClass and not method" will select 
-- `TestMyClass.test_something` but not `TestMyClass.test_method_simple`
-- `py.test test_mod.py::test_func` only run tests that match the "node ID",
-e.g "test_mod.py::test_func" will select only test_func in test_mod.py
+- `py.test -k stringexpr` only run tests with names that match the 
+  _"string expression"_, e.g. _"MyClass and not method"_ will select 
+  `TestMyClass.test_something` but not `TestMyClass.test_method_simple`
+- `py.test test_mod.py::test_func` only run tests that match the _"node ID"_,
+  e.g `test_mod.py::test_func` will select only `test_func` in `test_mod.py`
 - `py.test test_mod.py::TestClass::test_method` run a single method in a single 
 class
 
