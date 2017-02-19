@@ -4,7 +4,7 @@
 
 This demonstrates an ES6-React stateless component which has specified `propTypes`, `defaultProps`, child components with style specified.
 
-```
+```jsx
 import React, { PropTypes } from 'react';
 import {
   Text,
