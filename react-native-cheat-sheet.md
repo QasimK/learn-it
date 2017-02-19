@@ -42,3 +42,10 @@ Usage
 <Blocky></Blocky>
 <Blocky secondtext="Yeah2"></Blocky>
 ```
+
+
+## Appendix
+
+- [**Stateless Components**, Redux, Testing](https://camjackson.net/post/9-things-every-reactjs-beginner-should-know)
+- [Stateful Components](http://egorsmirnov.me/2015/06/14/react-and-es6-part2.html)
+- [Higher Order Components (Mixins)](http://egorsmirnov.me/2015/09/30/react-and-es6-part4.html)
