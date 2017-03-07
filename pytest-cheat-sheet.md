@@ -5,12 +5,12 @@
 --fixtures    # show available builtin function arguments
 -h | --help   # show help on command line and config file options
 
-# With Django the setup time may be quite long (don't do this normally)
+# With Django the setup time may be quite long (Don't do this normally? Do this normally!)
 --nomigrations
 
 # (Exception information is stored on sys.last_value, sys.last_type and sys.last_traceback.)
---pdb         # Open pdb on failure
---capture=no  # Allow use of ipdb in code
+--pdb               # Open pdb on failure [Install PDB++: pdbpp]
+-s | --capture=no   # Allow use of ipdb in code
 
 -x            # Stop after first failure
 --maxfail=3   # Stop after 3 failures
@@ -33,11 +33,13 @@
 # Running particular tests
 --ignore=tests/       # Ignore folder or file, you can do this multiple times
 
-py.test test_mod.py   # run tests in module
-py.test somepath      # run all tests below somepath
-
 # Only run tests matching the "string expression", e.g. "MyClass and not method"
+# Combine -k with the below filters
 py.test -k stringexpr
+
+# Run a module, or a folder
+py.test test_mod.py
+py.test somepath
 
 # Run a method or a class
 py.test test_mod.py::test_func
