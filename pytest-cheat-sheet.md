@@ -35,15 +35,17 @@
 
 py.test test_mod.py   # run tests in module
 py.test somepath      # run all tests below somepath
-py.test -k stringexpr # only run tests with names that match the
-                      # "string expression", e.g. "MyClass and not method"
-                      # will select TestMyClass.test_something
-                      # but not TestMyClass.test_method_simple
-py.test test_mod.py::test_func  # only run tests that match the "node ID",
-                                # e.g "test_mod.py::test_func" will select
-                                # only test_func in test_mod.py
-py.test test_mod.py::TestClass::test_method  # run a single method in
-                                             # a single class
+
+# Only run tests matching the "string expression", e.g. "MyClass and not method"
+py.test -k stringexpr
+
+# Run a method or a class
+py.test test_mod.py::test_func
+py.test test_mod.py::TestClass::test_method
+
+# Run a particular fixture parameter
+py.test test_mod.py::TestClass::test_method[param1-param2]
+py.test -k "test_method and param1 and param2"
 
 --pyargs      # Allow specifying a path via python module import format
 
