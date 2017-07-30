@@ -5,4 +5,4 @@
 
 ## Libraries
 
-- Create classes without boilerplate [attrs](https://attrs.readthedocs.io/en/stable/)
+- [Create classes without boilerplate - attrs](https://attrs.readthedocs.io/en/stable/)
