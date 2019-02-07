@@ -51,6 +51,9 @@ py.test -k "test_method and param1 and param2"
 
 --pyargs      # Allow specifying a path via python module import format
 
+# Ignore a plugin
+-p no:randomly
+
 # Creating result files
 --junitxml=path
 --resultlog=path      # Plain text
