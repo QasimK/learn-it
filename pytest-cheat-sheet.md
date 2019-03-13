@@ -1,4 +1,5 @@
-# py.test cheat-sheet
+# pys this.
+Remember to set onupdate and ondelete cascades on ForeignKeys.test cheat-sheet
 
 ```
 --version     # shows where pytest was imported from
