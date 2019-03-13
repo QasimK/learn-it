@@ -61,3 +61,11 @@ py.test -k "test_method and param1 and param2"
 ```
 
 https://pytest.org/latest/usage.html
+
+## setup.cfg
+
+```
+[tool:pytest]
+filterwarnings =
+    error::pandas.core.common.SettingWithCopyWarning
+```
