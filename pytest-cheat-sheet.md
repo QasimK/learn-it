@@ -20,6 +20,7 @@
 
 -l | --showlocals # Show local variables
 
+--tb=no       # only show the failing tests
 --tb=long     # the default informative traceback formatting
 --tb=native   # the Python standard library formatting
 --tb=short    # a shorter traceback format
