@@ -17,6 +17,7 @@
 
 --lf          # Run only last failed tests (otherwise, all)
 --ff          # Run last failed tests first, then the others
+--sw          # Like --lf -x but better ("stepwise")
 
 -l | --showlocals # Show local variables
 
